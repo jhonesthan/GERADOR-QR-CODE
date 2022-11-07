@@ -11,18 +11,22 @@
     <div class="wrapper">
       <header>
         <h1>Gerador de QR Code</h1>
-        <!-- <p>Insira a data de início e fim da turma</p> -->
+        <p>Insira os dados para criar uma nova turma</p>
       </header>
       <div class="form">
       <!-- <form action="teste.php" method="$_POST"> -->
         
         <!-- <input type="number" name="id_aula" spellcheck="false" placeholder="Insira seu ID"> -->
-        
-        <label for=""> Insira a data de início da turma</label>
-        <input type="date" name="datainicio" value="2022-11-11" min="2022-11-11">
+        <label class="label" for="">Insira seu CPF</label>
+        <input type="text" placeholder="999.999.999-99" name="cpf" id="cpf">
 
-        <label for=""> Insira a data de término da turma</label>
-        <input type="date" name="datafim" max="2023-12-12" >
+        <label class="label" for="">Insira seu EMAIL</label>
+        <input type="email" placeholder="exemplo@gmail.com" name="email" id="email">
+        <!-- <label for=""> Insira a data de início da turma</label> -->
+        <!-- <input type="date" name="datainicio" value="2022-11-11" min="2022-11-11"> -->
+
+        <!-- <label for=""> Insira a data de término da turma</label> -->
+        <!-- <input type="date" name="datafim" max="2023-12-12" > -->
 
         <button name="gerar" onclick="gerar()">Gerar Código QR</button>
 
